@@ -11,6 +11,8 @@
 		EDD5CAAD278F5C9600995A0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5CAAC278F5C9600995A0A /* ContentView.swift */; };
 		EDD5CAAF278F5C9600995A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5CAAE278F5C9600995A0A /* Assets.xcassets */; };
 		EDD5CAB2278F5C9600995A0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5CAB1278F5C9600995A0A /* Preview Assets.xcassets */; };
+		EDD5CABB278F5F9D00995A0A /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EDD5CAB9278F5F9D00995A0A /* chimeup.mp3 */; };
+		EDD5CABC278F5F9D00995A0A /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EDD5CABA278F5F9D00995A0A /* success.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		EDD5CAAC278F5C9600995A0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDD5CAAE278F5C9600995A0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD5CAB1278F5C9600995A0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDD5CAB9278F5F9D00995A0A /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		EDD5CABA278F5F9D00995A0A /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		EDD5CAC0278F62A700995A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,12 @@
 		EDD5CAA9278F5C9600995A0A /* RestartApp */ = {
 			isa = PBXGroup;
 			children = (
+				EDD5CAC0278F62A700995A0A /* Info.plist */,
+				EDD5CABF278F61E100995A0A /* Utilities */,
+				EDD5CABE278F61C900995A0A /* Views */,
+				EDD5CAB8278F5F8100995A0A /* Sounds */,
 				EDD5CAAA278F5C9600995A0A /* RestartAppApp.swift */,
-				EDD5CAAC278F5C9600995A0A /* ContentView.swift */,
+				EDD5CABD278F61B500995A0A /* Screens */,
 				EDD5CAAE278F5C9600995A0A /* Assets.xcassets */,
 				EDD5CAB0278F5C9600995A0A /* Preview Content */,
 			);
@@ -65,6 +74,37 @@
 				EDD5CAB1278F5C9600995A0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDD5CAB8278F5F8100995A0A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5CAB9278F5F9D00995A0A /* chimeup.mp3 */,
+				EDD5CABA278F5F9D00995A0A /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EDD5CABD278F61B500995A0A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5CAAC278F5C9600995A0A /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EDD5CABE278F61C900995A0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDD5CABF278F61E100995A0A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD5CABC278F5F9D00995A0A /* success.m4a in Resources */,
+				EDD5CABB278F5F9D00995A0A /* chimeup.mp3 in Resources */,
 				EDD5CAB2278F5C9600995A0A /* Preview Assets.xcassets in Resources */,
 				EDD5CAAF278F5C9600995A0A /* Assets.xcassets in Resources */,
 			);
@@ -272,11 +314,12 @@
 				DEVELOPMENT_TEAM = CYNZRZ47N3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestartApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,7 +329,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,11 +344,12 @@
 				DEVELOPMENT_TEAM = CYNZRZ47N3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestartApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
